@@ -1,4 +1,3 @@
-# s1051526 Algorithm_HW2
 # find kth biggest element from a unordered list in linear time
 import random
 import math

@@ -1,4 +1,3 @@
-# s1051526 Algorithm_HW3
 # find Longest Common Subsequence by dynamic programming
 def FindLCS(s1,s2):
     #find length of LCS

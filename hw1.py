@@ -1,4 +1,3 @@
-# s1051526 Algorithm_HW1
 # randomized quicksort
 import random
 def QS(arr):    # spend more space
