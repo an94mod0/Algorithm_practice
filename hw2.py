@@ -10,12 +10,12 @@ def select(A,k):
     small=[x for x in A if x <med]
     equal=[x for x in A if x==med]
     big  =[x for x in A if x >med]
-    if k<len(small)               :return select(small,k)
-    elif k<(len(equal)+len(small)):return med
-    else                          :return select(big,k+len(big))
+    if   k<len(small)           :return select(small,k)
+    elif k<len(equal)+len(small):return med
+    else                        :return select(big,k-len(small)-len(equal))
  
 A=[random.randint(0,500) for x in range(100)]
-print(A)
+#print(A)
 print(sorted(A)[math.floor(len(A)/2)])
 print(select(A,math.floor(len(A)/2)))
 finish=input()
